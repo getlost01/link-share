@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" 
+    integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>File Sharing</title>
+</head>
+<body>
+
+    <a href="https://github.com/getlost01" target="_blank" class="github" aria-label="View source on GitHub">
+        <img src="/images/link.png" alt="link-share logo" class="logo">
+    </a>
+    <section class="upload-container">
+        <div class="drop-zone">
+            <div class="icon-container">
+                <img src="images/file.svg" draggable="false" class="center" alt="File Icon">
+                <img src="images/file.svg" draggable="false" class="left" alt="File Icon">
+                <img src="images/file.svg" draggable="false" class="right" alt="File Icon">
+            </div>
+            <input type="file" class="file-in">
+            <div class="title">Drop your Files here or <span id="browseBtn">browse</span></div>
+        </div>
+        <div class="progress-container">
+              <div class="bg-progress"></div>
+                <div class="innercon">
+                <div class="title">UPLOADING . . . </div>
+                <div class="progress-bar"></div>
+                <div class="percentage-con"><span id="per">0</span>%</div>
+              </div>
+        </div>
+        <div class="sharing-con">
+            <p>Your Link.</p>
+            <div class="input-con">
+                <input type="text" id="fileURL" readonly>
+                <img src="/images/copy.svg" alt="copy" id="copybtn">
+            </div>
+            <p>This link expires in 24 hrs</p>
+        </div>
+        <div class="email-part">
+            <h4>OR</h4>
+            <p>Send Link via Email</p>
+            <div class="email-con">
+                <form id="emailform"> 
+                   <div class="fields" id="form1" action="#">
+                       <label for="">
+                           Sender E-mail
+                       </label>
+                       <input type="email" required name="from-email" id="sender" placeholder="Enter E-mail Address" onkeyup="validate()">
+                       <span class="indicator i1"></span>
+                   </div>
+
+                   <div class="fields" id="form2" action="#">
+                    <label for="">
+                        Reciever E-mail
+                    </label>
+                    <input type="email" required name="to-email" id="reciever" placeholder="Enter E-mail Address" onkeyup="validate()">
+                    <span class="indicator i2"></span>
+                  </div>
+                  <button type="submit"> Send </button>
+                </form>
+            </div>
+            
+        </div>
+        <div id="next-share">
+            <button id="nshare"> Browse New </button>
+        </div>
+    </section>
+
+
+    <div class="icons">
+        <ul >
+            <li><a href="https://www.linkedin.com/in/aagam-jain-gl01/" target="_blank"><i class="fa-brands fa-linkedin" ></i></a></li>
+            <li><a href="https://github.com/getlost01" target="_blank"><i class="fa-brands fa-github-square"></i></a></li>
+            <li><a href="https://portfolio-de-aagam.netlify.app/" target="_blank"><i class="fa-solid fa-square-share-nodes"></i></a></li>
+        </ul>
+    </div>
+
+    <div class="toast">
+       
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
