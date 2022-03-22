@@ -47,7 +47,7 @@ browse.addEventListener("click",(e)=>{
 copybtn.addEventListener("click",(e)=>{
     fileURL.select()
     document.execCommand("copy")
-    show_toast("Link Copies")
+    show_toast("Link Copied")
 })
 
 function uploadfile(){
