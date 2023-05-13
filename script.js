@@ -13,7 +13,7 @@ const emailform=document.querySelector("#emailform")
 const nextshare=document.getElementById("nshare")
 const toast=document.querySelector(".toast")
 
-const host = "https://dlink-share.vercel.app/"
+const host = "https://wild-plum-chimpanzee-cape.cyclic.app/"
 const uploadURL =`${host}api/files`
 const emailURL =`${host}api/files/send`
 
