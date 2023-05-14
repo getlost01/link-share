@@ -13,7 +13,7 @@ const emailform=document.querySelector("#emailform")
 const nextshare=document.getElementById("nshare")
 const toast=document.querySelector(".toast")
 
-const host = "https://wild-plum-chimpanzee-cape.cyclic.app/"
+const host = "https://linkshare-api.onrender.com/"
 const uploadURL =`${host}api/files`
 const emailURL =`${host}api/files/send`
 
