@@ -1,6 +1,6 @@
 
 
-# File Uploading and Sharing via Email
+# File Uploading and Sharing via Email (Frontend)
 
 This application allows users to upload files and share them via email. Users can upload any type of file and generate a link to share with others. 
 
@@ -10,17 +10,23 @@ This application allows users to upload files and share them via email. Users ca
 2. Select the file(s) you wish to upload.
 3. Wait for the file to upload and generate the sharing link.
 4. Click on the "Copy Link" button to copy the link to your clipboard.
-5. Open your email client and compose a new email.
-6. Paste the link into the body of the email.
-7. Send the email to the intended recipients.
+5. Or write your email && reciever email.
+6. Send the email to the intended recipients.
 
 ## Technologies Used
 
-This application was built using the following technologies:
+This frontend was built using the following technologies:
 
 - HTML
 - CSS
 - JavaScript
+
+## Preview
+<img width="540" alt="" src="https://github.com/getlost01/link-share/assets/79409258/a91aa4ce-5605-4778-a660-5fe47b85b2fd">
+<img width="540" alt="" src="https://github.com/getlost01/link-share/assets/79409258/56bea634-3d47-45a1-8956-ec31282f0fe6">
+<img width="540" alt="" src="https://github.com/getlost01/link-share/assets/79409258/b47f4cfa-6d47-4ea7-9da7-f99563029dcb">
+
+
 
 ## License
 
