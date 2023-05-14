@@ -12,6 +12,9 @@
     color: aliceblue;
     overflow-y: scroll;
   }
+  input{
+    outline:none;
+  }
 
   ::-webkit-scrollbar {
     width: 10px;
@@ -228,6 +231,9 @@
 
   
   /* -------------------- */
+  .email-con .fields label{
+    padding: 10px;
+  }
   .email-con .fields #sender,#reciever{
     width: 225px;
     outline: none;
@@ -290,8 +296,9 @@
 
 /* --------------toast----- */
 .toast{
-  position: absolute;
+  position: fixed;
   top: 10px;
+  z-index: 100;
   border: 1px solid var(--border-color);
   display: flex;
   justify-content:center ;
