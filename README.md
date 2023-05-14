@@ -1,6 +1,12 @@
+<p align="center">
+  <a href="https://chrome.google.com/webstore/detail/cp-contest-calendar/nchadgecfkcdikollfdhgobmjoeaiegd?hl=en&authuser=0">
+    <img src="https://github.com/getlost01/dlink-share/assets/79409258/68d0b24d-6f40-45e9-9c6e-0dfddd5a34fb" height="96">
+  </a>
+</p>
 
+----
 
-# File Uploading and Sharing via Email (Frontend)
+## File Uploading and Sharing via Email (Frontend)
 
 This application allows users to upload files and share them via email. Users can upload any type of file and generate a link to share with others. 
 
