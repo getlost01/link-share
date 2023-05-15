@@ -60,6 +60,7 @@ function uploadfile(){
 
 
   // upload file
+  show_toast(`Since backend is slow please wait.`)
   const xhr = new XMLHttpRequest();
   xhr.onreadystatechange=()=>{
       if(xhr.readyState===XMLHttpRequest.DONE)
@@ -69,7 +70,7 @@ function uploadfile(){
   xhr.upload.onprogress = updateProgress;
   xhr.upload.onerror=()=>{
       filein.value=""
-      show_toast(`Error in upload :${xhr.statusText}`)
+      show_toast(`Error in uploading ${xhr.statusText}`)
   }
   xhr.open("POST",uploadURL)
   xhr.send(formData)
@@ -129,7 +130,7 @@ const show_toast=(msg)=>{
     clearTimeout(toasttime)
      toasttime= setTimeout(()=>{
     toast.style.transform="translateY(-60px)"
-    },2000)
+    },5000)
 }
 
 
